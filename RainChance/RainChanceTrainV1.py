@@ -1,6 +1,7 @@
 from math import e
 
 def train(X1_test,X2_test,weight1,weigh2,bias,learn_rate):
+  print("training..."
   for i in range(10000):
   W1_errors = []
   W2_errors = []
@@ -20,3 +21,5 @@ def train(X1_test,X2_test,weight1,weigh2,bias,learn_rate):
   weight_1 -= (learn_rate * W1slope)
   weight_2 -= (learn_rate * W2slope)
   bias -= (learn_rate * Bslope)
+print("training complete")
+return weight1,weight2,bias
