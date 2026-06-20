@@ -1,15 +1,7 @@
 from math import e
-from RainChanceDataPrep import X1_test
-from RainChanceDataPrep import X2_test
-from RainChanceDataPrep import y1_test
 
-weight_1 = 0
-weight_2 = 0
-bias = 0
-learn_rate = 0.001
-
-print("training...")
-for i in range(10000):
+def train(X1_test,X2_test,weight1,weigh2,bias,learn_rate):
+  for i in range(10000):
   W1_errors = []
   W2_errors = []
   b_errors
