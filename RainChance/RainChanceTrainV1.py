@@ -1,7 +1,7 @@
 from math import e
-from RainChanceDataPrep.py import X1_test
-from RainChanceDataPrep.py import X2_test
-from RainChanceDataPrep.py import y1_test
+from RainChanceDataPrep import X1_test
+from RainChanceDataPrep import X2_test
+from RainChanceDataPrep import y1_test
 
 weight_1 = 0
 weight_2 = 0
