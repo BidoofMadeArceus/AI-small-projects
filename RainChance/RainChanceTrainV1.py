@@ -1,4 +1,7 @@
 from math import e
+from RainChanceDataPrep import X1_train
+from RainChanceDataPrep import X2_train
+from RainChanceDataPrep import y_train
 
 def train(X1_train,X2_train,y_train,weight1,weigh2,bias,learn_rate):
   print("training..."
@@ -23,3 +26,8 @@ def train(X1_train,X2_train,y_train,weight1,weigh2,bias,learn_rate):
   bias -= (learn_rate * Bslope)
 print("training complete")
 return weight1,weight2,bias
+
+weight1 = 0
+weight2 = 0
+bias = 0
+learn_rate = 0
