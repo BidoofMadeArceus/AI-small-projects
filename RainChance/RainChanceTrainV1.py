@@ -9,23 +9,29 @@ bias = 0
 learn_rate = 0
 
 print("training...")
+
 for i in range(10000):
-W1_errors = []
-W2_errors = []
-b_errors = []
-for i in range(len(X1_train):
-  z = b + (weight_1 * X1_test[i]) + (weight_2 * X2_test[i])
-  predict = 1 / (1 + e**(0-z)
-  w1_error = (predict - y[i]) * X1_train[i]
-  w2_error = (predict - y[i]) * X2_train[i]
-  b_error = predict - y_train[i]
-  W1_errors.append(w1_error)
-  W2_errors.append(w2_error)
-  b_errors.append(b_error)
-W1slope = sum(W1_errors) / len(X1_train)
-W2slope = sum(W2_errors) / len(X1_train)
-Bslope = sum(b_errors) / len(X1_train)
-weight_1 -= (learn_rate * W1slope)
-weight_2 -= (learn_rate * W2slope)
-bias -= (learn_rate * Bslope)
+  W1_errors = []
+  W2_errors = []
+  b_errors = []
+  for i in range(len(X1_train)):
+    z = bias + (weight_1 * X1_train.iloc[i]) + (weight_2 * X2_train.iloc[i])
+    predict = 1 / (1 + e**(0-z))
+    w1_error = (predict - y_train.iloc[i]) * X1_train.iloc[i]
+    w2_error = (predict - y_train.iloc[i]) * X2_train.iloc[i]
+    b_error = predict - y_train.iloc[i]
+    W1_errors.append(w1_error)
+    W2_errors.append(w2_error)
+    b_errors.append(b_error)
+  W1slope = sum(W1_errors) / len(X1_train)
+  W2slope = sum(W2_errors) / len(X1_train)
+  Bslope = sum(b_errors) / len(X1_train)
+  weight_1 -= (learn_rate * W1slope)
+  weight_2 -= (learn_rate * W2slope)
+  bias -= (learn_rate * Bslope)
+
 print("training complete")
+
+print(weight_1)
+print(weight_2)
+print(bias)
