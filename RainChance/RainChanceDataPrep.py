@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-df = pd.read_csv("RainChanceData.csv")
+df = pd.read_csv("RainChance/RainChanceData.csv")
 df = df.dropna(subset=["PRCP"])
 df = df.dropna(subset=["TMAX"])
 df = df.dropna(subset=["TMIN"])
