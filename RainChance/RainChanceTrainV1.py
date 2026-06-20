@@ -1,5 +1,4 @@
 from math import e
-import pandas as pd
 
 weight = 0
 bias = 0
