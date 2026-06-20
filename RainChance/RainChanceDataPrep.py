@@ -11,3 +11,12 @@ df["Rain"] = (df["PRCP"] > 0).astype(int)
 X1 = df["TMAX"]
 X2 = df["TMIN"]
 y = df["Rain"]
+
+X1_train, X1_test, X2_train, X2_test, y_train, y_test = train_test_split(
+    X1,
+    X2,
+    y,
+    test_size=0.2,
+    random_state=42,
+    shuffle=True
+)
