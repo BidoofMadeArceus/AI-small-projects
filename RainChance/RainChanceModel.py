@@ -1,4 +1,3 @@
-import numpy as np
 from math import e
 
 def train(X, y, w, b, l):
