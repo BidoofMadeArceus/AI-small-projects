@@ -1,9 +1,4 @@
-from RainChanceDataPrep import X1_test
-from RainChanceDataPrep import X2_test
-from RainChanceDataPrep import y_test
-from RainChanceTrainV1 import weight_1
-from RainChanceTrainV1 import weight_2
-from RainChanceTrainV1 import bias
+import pandas as pd
 from math import e
 import numpy as np
 
