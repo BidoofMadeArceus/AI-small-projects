@@ -3,9 +3,9 @@ import numpy as np
 from RainChanceDataPrep import X1_test
 from RainChanceDataPrep import X2_test
 from RainChanceDataPrep import y_test
-from RainChanceTrainV1 import weight_1
-from RainChanceTrainV1 import weight_2
-from RainChanceTrainV1 import bias
+from RainChanceTrain import weight_1
+from RainChanceTrain import weight_2
+from RainChanceTrain import bias
 
 errors = []
 
