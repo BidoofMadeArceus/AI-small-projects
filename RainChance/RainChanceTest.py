@@ -1,6 +1,9 @@
 import pandas as pd
 from math import e
 import numpy as np
+from RainChanceDataPrep import X1_test
+from RainChanceDataPrep import X2_test
+from RainChanceDataPrep import y_test
 
 errors = []
 
