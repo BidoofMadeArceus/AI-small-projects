@@ -2,6 +2,7 @@ from math import e
 from RainChanceDataPrep import X1_train
 from RainChanceDataPrep import X2_train
 from RainChanceDataPrep import y_train
+import pandas as pd
 
 weight_1 = 0
 weight_2 = 0
