@@ -2,12 +2,15 @@ from math import e
 from RainChanceDataPrep import X1_train
 from RainChanceDataPrep import X2_train
 from RainChanceDataPrep import y_train
-import pandas as pd
 
 weight_1 = 0
 weight_2 = 0
 bias = 0
-learn_rate = 0
+learn_rate = 0.001
+print("Weights: " + str(weight_1) + ", " + str(weight_2))
+print("Bias: " + str(bias))
+print(X1_train.min(), X1_train.max())
+print(X2_train.min(), X2_train.max())
 
 print("training...")
 
@@ -33,6 +36,5 @@ for i in range(1000):
 
 print("training complete")
 
-data = {"weight1": weight_1,"weight2": weight_2,"bias": bias}
-df = pd.dataframe(data)
-df.to_csv('TrainingHistoryV1.csv', mode='a', index=False, header=False)
+print("Weights: " + str(weight_1) + ", " + str(weight_2))
+print("Bias: " + str(bias))
