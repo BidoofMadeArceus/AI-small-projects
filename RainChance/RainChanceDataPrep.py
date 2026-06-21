@@ -9,7 +9,9 @@ df = df.dropna(subset=["TMIN"])
 df["Rain"] = (df["PRCP"] > 0).astype(int)
 
 X1 = df["TMAX"]
+X1 = X1/10
 X2 = df["TMIN"]
+X2 = X2/10
 y = df["Rain"]
 
 X1_train, X1_test, X2_train, X2_test, y_train, y_test = train_test_split(
