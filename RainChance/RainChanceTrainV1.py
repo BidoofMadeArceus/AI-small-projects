@@ -11,7 +11,7 @@ learn_rate = 0
 
 print("training...")
 
-for i in range(10000):
+for i in range(1000):
   W1_errors = []
   W2_errors = []
   b_errors = []
@@ -33,6 +33,6 @@ for i in range(10000):
 
 print("training complete")
 
-print(weight_1)
-print(weight_2)
-print(bias)
+data = {"weight1": weight_1,"weight2": weight_2,"bias": bias}
+df = pd.dataframe(data)
+df.to_csv('TrainingHistoryV1.csv', mode='a', index=False, header=False)
