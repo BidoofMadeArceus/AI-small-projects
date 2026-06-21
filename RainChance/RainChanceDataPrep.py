@@ -12,11 +12,14 @@ X1 = df["TMAX"]
 X1 = X1/10
 X2 = df["TMIN"]
 X2 = X2/10
+X3 = df["TAVG"]
+X3 = X3/10
 y = df["Rain"]
 
-X1_train, X1_test, X2_train, X2_test, y_train, y_test = train_test_split(
+X1_train, X1_test, X2_train, X2_test, X3_train, X3_test, y_train, y_test = train_test_split(
     X1,
     X2,
+    X3,
     y,
     test_size=0.2,
     random_state=42,
