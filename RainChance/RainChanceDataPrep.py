@@ -10,9 +10,9 @@ df = df.dropna(subset=["TAVG"])
 df["Rain"] = (df["PRCP"] > 0).astype(int)
 
 X11 = df["TMAX"]
-X11 = X1/10
+X11 = X11/10
 X12 = df["TMIN"]
-X12 = X2/10
+X12 = X12/10
 X2 = df["TAVG"]
 X2 = X2/10
 X1 = X1 - X2
