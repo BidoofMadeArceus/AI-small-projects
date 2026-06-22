@@ -25,7 +25,7 @@ Scale2 = []
 
 for i in range(len(X1)):
     temp1 = (X1.iloc[i] - X1.min())/(X1.max() - X1.min())
-    temp2 = (X2.iloc[i] - X1.min())/(X1.max() - X1.min())
+    temp2 = (X2.iloc[i] - X2.min())/(X2.max() - X2.min())
     Scale1.append(temp1)
     Scale2.append(temp2)
 
