@@ -17,7 +17,20 @@ X2 = df["TAVG"]
 X2 = X2/10
 X1 = X11 - X12
 X1 = round(X1, 1)
+X2 = round(X2, 1)
 y = df["Rain"]
+
+Scale1 = []
+Scale2 = []
+
+for i in range(len(X1)):
+    temp1 = (X1.iloc[i] - X1.min())/(X1.max() - X1.min())
+    temp2 = (X2.iloc[i] - X1.min())/(X1.max() - X1.min())
+    Scale1.append(temp1)
+    Scale2.append(temp2)
+
+X1 = Scale1
+X2 = Scale2
 
 X1_train, X1_test, X2_train, X2_test, y_train, y_test = train_test_split(
     X1,
