@@ -15,7 +15,7 @@ X12 = df["TMIN"]
 X12 = X12/10
 X2 = df["TAVG"]
 X2 = X2/10
-X1 = X1 - X2
+X1 = X11 - X12
 y = df["Rain"]
 
 X1_train, X1_test, X2_train, X2_test, y_train, y_test = train_test_split(
