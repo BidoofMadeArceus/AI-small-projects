@@ -16,6 +16,7 @@ X12 = X12/10
 X2 = df["TAVG"]
 X2 = X2/10
 X1 = X11 - X12
+X1 = round(X1, 1)
 y = df["Rain"]
 
 X1_train, X1_test, X2_train, X2_test, y_train, y_test = train_test_split(
