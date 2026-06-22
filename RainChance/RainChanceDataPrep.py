@@ -5,6 +5,7 @@ df = pd.read_csv("RainChance/RainChanceData.csv")
 df = df.dropna(subset=["PRCP"])
 df = df.dropna(subset=["TMAX"])
 df = df.dropna(subset=["TMIN"])
+df = df.dropna(subset=["TAVG"])
 
 df["Rain"] = (df["PRCP"] > 0).astype(int)
 
