@@ -9,7 +9,7 @@ TempRange = int(input("temperature range: "))
 AvgTemp = int(input("average temperature: "))
 
 TempRange = (TempRange - X1.min())/(X1.max() - X1.min())
-TempRange = (AvgTemp - X1.min())/(X1.max() - X1.min())
+TempRange = (AvgTemp - X2.min())/(X2.max() - X2.min())
 
 z = bias + (weight_1 * TempRange) + (weight_2 * AvgTemp)
 predict = 1 / (1 + e ** (0-z))
