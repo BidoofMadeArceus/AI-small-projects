@@ -29,12 +29,10 @@ for i in range(len(X1)):
     Scale1.append(temp1)
     Scale2.append(temp2)
 
-X1 = Scale1
-X2 = Scale2
 
 X1_train, X1_test, X2_train, X2_test, y_train, y_test = train_test_split(
-    X1,
-    X2,
+    Scale1,
+    Scale2,
     y,
     test_size=0.2,
     random_state=42,
