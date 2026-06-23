@@ -20,8 +20,8 @@ X1 = round(X1, 1)
 X2 = round(X2, 1)
 Scale1 = X1
 Scale2 = X2
-X1 = (X1 - Scale1.min)/(Scale1.max - Scale1.min)
-X2 = (X2 - Scale2.min)/(Scale2.max - Scale2.min)
+X1 = (X1 - Scale1.min())/(Scale1.max() - Scale1.min())
+X2 = (X2 - Scale2.min())/(Scale2.max() - Scale2.min())
 y = df["Rain"]
 
 X1_train, X1_test, X2_train, X2_test, y_train, y_test = train_test_split(
