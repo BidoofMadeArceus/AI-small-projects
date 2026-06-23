@@ -23,7 +23,7 @@ for i in range(1000):
   W3_errors = []
   b_errors = []
   for i in range(len(X1_train)):
-    z = bias + (weight_1 * X1_train.iloc[i]) + (weight_2 * X2_train.iloc[i]) (weight_3 * X3_train.iloc[i])
+    z = bias + (weight_1 * X1_train.iloc[i]) + (weight_2 * X2_train.iloc[i]) + (weight_3 * X3_train.iloc[i])
     predict = 1 / (1 + e**(0-z))
     w1_error = (predict - y_train.iloc[i]) * X1_train.iloc[i]
     w2_error = (predict - y_train.iloc[i]) * X2_train.iloc[i]
