@@ -28,9 +28,13 @@ Scale3 = X3
 X1 = (X1 - Scale1.min())/(Scale1.max() - Scale1.min())
 X2 = (X2 - Scale2.min())/(Scale2.max() - Scale2.min())
 X3 = (X3 - Scale3.min())/(Scale3.max() - Scale3.min())
+X4 = (X4 - Scale4.min())/(Scale4.max() - Scale4.min())
+X5 = (X4 - Scale5.min())/(Scale5.max() - Scale5.min())
 X1 = round(X1, 1)
 X2 = round(X2, 1)
 X3 = round(X3, 1)
+X4 = round(X4, 1)
+X5 = round(X5, 1)
 y = df["Rain"]
 
 X1_train, X1_test, X2_train, X2_test, X3_train, X3_test, X4_train, X4_test, X5_train, X5_test y_train, y_test = train_test_split(
