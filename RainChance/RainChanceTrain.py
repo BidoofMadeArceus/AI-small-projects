@@ -12,7 +12,7 @@ weight_3 = 0
 weight_4 = 0
 weight_5 = 0
 bias = 0
-learn_rate = 0.0001
+learn_rate = 0.01
 print("Weights: " + str(weight_1) + ", " + str(weight_2) + ", " + str(weight_4) + ", " + str(weight_5))
 print("Bias: " + str(bias))
 print(X1_train.min(), X1_train.max())
@@ -57,6 +57,8 @@ for i in range(1000):
   weight_4 -= (learn_rate * W4slope)
   weight_5 -= (learn_rate * W5slope)
   bias -= (learn_rate * Bslope)
+  print("Weights: " + str(weight_1) + ", " + str(weight_2) + ", " + str(weight_3) + ", " + str(weight_4) + ", " + str(weight_5))
+  print("Bias: " + str(bias))
 
 print("training complete")
 
