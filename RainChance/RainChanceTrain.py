@@ -49,7 +49,7 @@ for i in range(1000):
   W2slope = sum(W2_errors) / len(X1_train)
   W3slope = sum(W3_errors) / len(X1_train)
   W4slope = sum(W4_errors) / len(X1_train)
-  W5slope = sum(W4_errors) / len(X1_train)
+  W5slope = sum(W5_errors) / len(X1_train)
   Bslope = sum(b_errors) / len(X1_train)
   weight_1 -= (learn_rate * W1slope)
   weight_2 -= (learn_rate * W2slope)
