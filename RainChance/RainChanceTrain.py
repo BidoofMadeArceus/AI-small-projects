@@ -6,12 +6,12 @@ from RainChanceDataPrep import X4_train
 from RainChanceDataPrep import X5_train
 from RainChanceDataPrep import y_train
 
-weight_1 = 0
-weight_2 = 0
-weight_3 = 0
-weight_4 = 0
-weight_5 = 0
-bias = 0
+weight_1 = 1
+weight_2 = 1
+weight_3 = 1
+weight_4 = 1
+weight_5 = 1
+bias = 1
 learn_rate = 0.0001
 print("Weights: " + str(weight_1) + ", " + str(weight_2) + ", " + str(weight_4) + ", " + str(weight_5))
 print("Bias: " + str(bias))
