@@ -20,6 +20,8 @@ Longitude = int(input("longitude: "))
 TempRange = (TempRange - Scale1.min())/(Scale1.max() - Scale1.min())
 AvgTemp = (AvgTemp - Scale2.min())/(Scale2.max() - Scale2.min())
 Elevation = (Elevation - Scale3.min())/(Scale3.max() - Scale3.min())
+Latitude = (Latitude - Scale4.min())/(Scale4.max() - Scale4.min())
+Longitude = (Longitude - Scale5.min())/(Scale5.max() - Scale5.min())
 
 z = bias + (weight_1 * TempRange) + (weight_2 * AvgTemp) + (weight_4 * Latitude) + (weight_5 * Longitude)
 predict = 1 / (1 + e ** (0-z))
