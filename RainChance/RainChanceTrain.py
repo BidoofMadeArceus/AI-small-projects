@@ -12,7 +12,7 @@ weight_3 = 0
 weight_4 = 0
 weight_5 = 0
 bias = 0
-learn_rate = 0.01
+learn_rate = 0.1
 print("Weights: " + str(weight_1) + ", " + str(weight_2) + ", " + str(weight_4) + ", " + str(weight_5))
 print("Bias: " + str(bias))
 print(X1_train.min(), X1_train.max())
@@ -23,7 +23,7 @@ print(X5_train.min(), X5_train.max())
 
 print("training...")
 
-for i in range(1000):
+for i in range(10000):
   W1_errors = []
   W2_errors = []
   W3_errors = []
