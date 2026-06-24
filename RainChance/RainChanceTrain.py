@@ -57,8 +57,8 @@ for i in range(10000):
   weight_4 -= (learn_rate * W4slope)
   weight_5 -= (learn_rate * W5slope)
   bias -= (learn_rate * Bslope)
-  print("Weights: " + str(weight_1) + ", " + str(weight_2) + ", " + str(weight_3) + ", " + str(weight_4) + ", " + str(weight_5))
-  print("Bias: " + str(bias))
+  print(weight_1, weight_2, weight_3, weight_4, weight_5)
+  print(bias)
 
 print("training complete")
 
