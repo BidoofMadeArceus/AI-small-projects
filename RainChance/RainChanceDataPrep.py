@@ -37,12 +37,12 @@ X4 = round(X4, 1)
 X5 = round(X5, 1)
 y = df["Rain"]
 
-X1_train, X1_test, X2_train, X2_test, X3_train, X3_test, X4_train, X4_test, X5_train, X5_test y_train, y_test = train_test_split(
+X1_train, X1_test, X2_train, X2_test, X3_train, X3_test, X4_train, X4_test, X5_train, X5_test, y_train, y_test = train_test_split(
     X1,
     X2,
     X3,
-    X4
-    X5
+    X4,
+    X5,
     y,
     test_size=0.2,
     random_state=42,
